@@ -1,0 +1,8 @@
+node_modules/
+.env
+.env.*
+!.env.example
+shift-data.json
+shift-data.json.tmp
+erlc-log-state.json
+erlc-log-state.json.tmp

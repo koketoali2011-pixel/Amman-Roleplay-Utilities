@@ -1,0 +1,14 @@
+services:
+  bot:
+    build: .
+    container_name: amman-roleplay-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATA_DIR: /data
+    volumes:
+      - bot-data:/data
+
+volumes:
+  bot-data:
